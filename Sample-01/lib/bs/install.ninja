@@ -1,0 +1,57 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o Auth0-Auth0ReasonSample.cmi : cp ../bs/src/ffi/Auth0-Auth0ReasonSample.cmi
+o Auth0-Auth0ReasonSample.cmj : cp ../bs/src/ffi/Auth0-Auth0ReasonSample.cmj
+o Auth0-Auth0ReasonSample.cmt : cp ../bs/src/ffi/Auth0-Auth0ReasonSample.cmt
+o Auth0.re : cp ../../src/ffi/Auth0.re
+o SolidIcons-Auth0ReasonSample.cmi : cp ../bs/src/ffi/SolidIcons-Auth0ReasonSample.cmi
+o SolidIcons-Auth0ReasonSample.cmj : cp ../bs/src/ffi/SolidIcons-Auth0ReasonSample.cmj
+o SolidIcons-Auth0ReasonSample.cmt : cp ../bs/src/ffi/SolidIcons-Auth0ReasonSample.cmt
+o SolidIcons.re : cp ../../src/ffi/SolidIcons.re
+o ReactRouter-Auth0ReasonSample.cmi : cp ../bs/src/ffi/ReactRouter-Auth0ReasonSample.cmi
+o ReactRouter-Auth0ReasonSample.cmj : cp ../bs/src/ffi/ReactRouter-Auth0ReasonSample.cmj
+o ReactRouter-Auth0ReasonSample.cmt : cp ../bs/src/ffi/ReactRouter-Auth0ReasonSample.cmt
+o ReactRouter.re : cp ../../src/ffi/ReactRouter.re
+o FontAwesomeIcon-Auth0ReasonSample.cmi : cp ../bs/src/ffi/FontAwesomeIcon-Auth0ReasonSample.cmi
+o FontAwesomeIcon-Auth0ReasonSample.cmj : cp ../bs/src/ffi/FontAwesomeIcon-Auth0ReasonSample.cmj
+o FontAwesomeIcon-Auth0ReasonSample.cmt : cp ../bs/src/ffi/FontAwesomeIcon-Auth0ReasonSample.cmt
+o FontAwesomeIcon.re : cp ../../src/ffi/FontAwesomeIcon.re
+o Hero-Auth0ReasonSample.cmi : cp ../bs/src/components/Hero-Auth0ReasonSample.cmi
+o Hero-Auth0ReasonSample.cmj : cp ../bs/src/components/Hero-Auth0ReasonSample.cmj
+o Hero-Auth0ReasonSample.cmt : cp ../bs/src/components/Hero-Auth0ReasonSample.cmt
+o Hero.re : cp ../../src/components/Hero.re
+o Footer-Auth0ReasonSample.cmi : cp ../bs/src/components/Footer-Auth0ReasonSample.cmi
+o Footer-Auth0ReasonSample.cmj : cp ../bs/src/components/Footer-Auth0ReasonSample.cmj
+o Footer-Auth0ReasonSample.cmt : cp ../bs/src/components/Footer-Auth0ReasonSample.cmt
+o Footer.re : cp ../../src/components/Footer.re
+o NavBar-Auth0ReasonSample.cmi : cp ../bs/src/components/NavBar-Auth0ReasonSample.cmi
+o NavBar-Auth0ReasonSample.cmj : cp ../bs/src/components/NavBar-Auth0ReasonSample.cmj
+o NavBar-Auth0ReasonSample.cmt : cp ../bs/src/components/NavBar-Auth0ReasonSample.cmt
+o NavBar.re : cp ../../src/components/NavBar.re
+o Content-Auth0ReasonSample.cmi : cp ../bs/src/components/Content-Auth0ReasonSample.cmi
+o Content-Auth0ReasonSample.cmj : cp ../bs/src/components/Content-Auth0ReasonSample.cmj
+o Content-Auth0ReasonSample.cmt : cp ../bs/src/components/Content-Auth0ReasonSample.cmt
+o Content.re : cp ../../src/components/Content.re
+o Loading-Auth0ReasonSample.cmi : cp ../bs/src/components/Loading-Auth0ReasonSample.cmi
+o Loading-Auth0ReasonSample.cmj : cp ../bs/src/components/Loading-Auth0ReasonSample.cmj
+o Loading-Auth0ReasonSample.cmt : cp ../bs/src/components/Loading-Auth0ReasonSample.cmt
+o Loading.re : cp ../../src/components/Loading.re
+o Highlight-Auth0ReasonSample.cmi : cp ../bs/src/components/Highlight-Auth0ReasonSample.cmi
+o Highlight-Auth0ReasonSample.cmj : cp ../bs/src/components/Highlight-Auth0ReasonSample.cmj
+o Highlight-Auth0ReasonSample.cmt : cp ../bs/src/components/Highlight-Auth0ReasonSample.cmt
+o Highlight.re : cp ../../src/components/Highlight.re
+o RePromise-Auth0ReasonSample.cmi : cp ../bs/src/utils/RePromise-Auth0ReasonSample.cmi
+o RePromise-Auth0ReasonSample.cmj : cp ../bs/src/utils/RePromise-Auth0ReasonSample.cmj
+o RePromise-Auth0ReasonSample.cmt : cp ../bs/src/utils/RePromise-Auth0ReasonSample.cmt
+o RePromise.re : cp ../../src/utils/RePromise.re
+o ContentData-Auth0ReasonSample.cmi : cp ../bs/src/utils/ContentData-Auth0ReasonSample.cmi
+o ContentData-Auth0ReasonSample.cmj : cp ../bs/src/utils/ContentData-Auth0ReasonSample.cmj
+o ContentData-Auth0ReasonSample.cmt : cp ../bs/src/utils/ContentData-Auth0ReasonSample.cmt
+o ContentData.re : cp ../../src/utils/ContentData.re
+o Auth0ReasonSample.cmi : cp ../bs/Auth0ReasonSample.cmi
+o Auth0ReasonSample.cmj : cp ../bs/Auth0ReasonSample.cmj
+o Auth0ReasonSample.cmt : cp ../bs/Auth0ReasonSample.cmt
+build install.stamp : touch Auth0-Auth0ReasonSample.cmi Auth0-Auth0ReasonSample.cmj SolidIcons-Auth0ReasonSample.cmi SolidIcons-Auth0ReasonSample.cmj ReactRouter-Auth0ReasonSample.cmi ReactRouter-Auth0ReasonSample.cmj FontAwesomeIcon-Auth0ReasonSample.cmi FontAwesomeIcon-Auth0ReasonSample.cmj Hero-Auth0ReasonSample.cmi Hero-Auth0ReasonSample.cmj Footer-Auth0ReasonSample.cmi Footer-Auth0ReasonSample.cmj NavBar-Auth0ReasonSample.cmi NavBar-Auth0ReasonSample.cmj Content-Auth0ReasonSample.cmi Content-Auth0ReasonSample.cmj Loading-Auth0ReasonSample.cmi Loading-Auth0ReasonSample.cmj Highlight-Auth0ReasonSample.cmi Highlight-Auth0ReasonSample.cmj RePromise-Auth0ReasonSample.cmi RePromise-Auth0ReasonSample.cmj ContentData-Auth0ReasonSample.cmi ContentData-Auth0ReasonSample.cmj Auth0ReasonSample.cmi Auth0ReasonSample.cmj

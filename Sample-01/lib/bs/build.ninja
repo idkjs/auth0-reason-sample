@@ -1,0 +1,58 @@
+rescript = 1
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-css/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-css-emotion/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/decco/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/reason-react/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/reason-promise/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/re-classnames/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/@ahrefs/bs-reactstrap/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/@glennsl/bs-json/lib/ocaml/install.stamp
+rule astj
+  command = /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-platform/darwin/bsc.exe  -bs-v 9.0.2,1628071699.46 -ppx /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/decco/ppx -bs-jsx 3 -bs-super-errors -bs-no-version-header -absname -bs-ast -o $out $i
+o src/ffi/Auth0.ast : astj ../../src/ffi/Auth0.re
+rule deps
+  command = /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-platform/darwin/bsb_helper.exe -hash 07145cc66c33825359eefa29f07c6622 -bs-ns Auth0ReasonSample $in
+  restat = 1
+o src/ffi/Auth0.d : deps src/ffi/Auth0.ast
+rule mij
+  command = /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-platform/darwin/bsc.exe -bs-ns Auth0ReasonSample -I . -I src/utils -I src/components -I src/__tests__ -I src/ffi -I src/views/__tests__ -I src/views -I src/assets -I src -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-css/lib/ocaml -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-css-emotion/lib/ocaml -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/decco/lib/ocaml -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/reason-react/lib/ocaml -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/reason-promise/lib/ocaml -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/re-classnames/lib/ocaml -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/@ahrefs/bs-reactstrap/lib/ocaml -I /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/@glennsl/bs-json/lib/ocaml -bs-super-errors -bs-no-version-header  -bs-package-name auth0-reason-sample -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/ffi/Auth0-Auth0ReasonSample.cmj src/ffi/Auth0-Auth0ReasonSample.cmi ../../src/ffi/Auth0.bs.js : mij src/ffi/Auth0.ast
+o src/ffi/SolidIcons.ast : astj ../../src/ffi/SolidIcons.re
+o src/ffi/SolidIcons.d : deps src/ffi/SolidIcons.ast
+o src/ffi/SolidIcons-Auth0ReasonSample.cmj src/ffi/SolidIcons-Auth0ReasonSample.cmi ../../src/ffi/SolidIcons.bs.js : mij src/ffi/SolidIcons.ast
+o src/ffi/ReactRouter.ast : astj ../../src/ffi/ReactRouter.re
+o src/ffi/ReactRouter.d : deps src/ffi/ReactRouter.ast
+o src/ffi/ReactRouter-Auth0ReasonSample.cmj src/ffi/ReactRouter-Auth0ReasonSample.cmi ../../src/ffi/ReactRouter.bs.js : mij src/ffi/ReactRouter.ast
+o src/ffi/FontAwesomeIcon.ast : astj ../../src/ffi/FontAwesomeIcon.re
+o src/ffi/FontAwesomeIcon.d : deps src/ffi/FontAwesomeIcon.ast
+o src/ffi/FontAwesomeIcon-Auth0ReasonSample.cmj src/ffi/FontAwesomeIcon-Auth0ReasonSample.cmi ../../src/ffi/FontAwesomeIcon.bs.js : mij src/ffi/FontAwesomeIcon.ast
+o src/components/Hero.ast : astj ../../src/components/Hero.re
+o src/components/Hero.d : deps src/components/Hero.ast
+o src/components/Hero-Auth0ReasonSample.cmj src/components/Hero-Auth0ReasonSample.cmi ../../src/components/Hero.bs.js : mij src/components/Hero.ast
+o src/components/Footer.ast : astj ../../src/components/Footer.re
+o src/components/Footer.d : deps src/components/Footer.ast
+o src/components/Footer-Auth0ReasonSample.cmj src/components/Footer-Auth0ReasonSample.cmi ../../src/components/Footer.bs.js : mij src/components/Footer.ast
+o src/components/NavBar.ast : astj ../../src/components/NavBar.re
+o src/components/NavBar.d : deps src/components/NavBar.ast
+o src/components/NavBar-Auth0ReasonSample.cmj src/components/NavBar-Auth0ReasonSample.cmi ../../src/components/NavBar.bs.js : mij src/components/NavBar.ast
+o src/components/Content.ast : astj ../../src/components/Content.re
+o src/components/Content.d : deps src/components/Content.ast
+o src/components/Content-Auth0ReasonSample.cmj src/components/Content-Auth0ReasonSample.cmi ../../src/components/Content.bs.js : mij src/components/Content.ast
+o src/components/Loading.ast : astj ../../src/components/Loading.re
+o src/components/Loading.d : deps src/components/Loading.ast
+o src/components/Loading-Auth0ReasonSample.cmj src/components/Loading-Auth0ReasonSample.cmi ../../src/components/Loading.bs.js : mij src/components/Loading.ast
+o src/components/Highlight.ast : astj ../../src/components/Highlight.re
+o src/components/Highlight.d : deps src/components/Highlight.ast
+o src/components/Highlight-Auth0ReasonSample.cmj src/components/Highlight-Auth0ReasonSample.cmi ../../src/components/Highlight.bs.js : mij src/components/Highlight.ast
+o src/utils/RePromise.ast : astj ../../src/utils/RePromise.re
+o src/utils/RePromise.d : deps src/utils/RePromise.ast
+o src/utils/RePromise-Auth0ReasonSample.cmj src/utils/RePromise-Auth0ReasonSample.cmi ../../src/utils/RePromise.bs.js : mij src/utils/RePromise.ast
+o src/utils/ContentData.ast : astj ../../src/utils/ContentData.re
+o src/utils/ContentData.d : deps src/utils/ContentData.ast
+o src/utils/ContentData-Auth0ReasonSample.cmj src/utils/ContentData-Auth0ReasonSample.cmi ../../src/utils/ContentData.bs.js : mij src/utils/ContentData.ast
+rule build_package
+  command = /Users/mando/Github/auth0-react-samples/Sample-01/node_modules/bs-platform/darwin/bsc.exe -w -49 -color always -no-alias-deps  $i
+  restat = 1
+o Auth0ReasonSample.cmi : build_package Auth0ReasonSample.mlmap
