@@ -13,6 +13,8 @@ type idToken = {__raw: string};
 
 type t = {
   loginWithRedirect: unit => Js.Promise.t(unit),
+  loginWithPopup: unit => Js.Promise.t(unit),
+  getAccessTokenWithPopup: unit => Js.Promise.t(unit),
   isAuthenticated: bool,
   isLoading: bool,
   error: Js.Exn.t,

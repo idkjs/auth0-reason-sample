@@ -6,7 +6,6 @@
   version "1.0.3"
   resolved "https://codeload.github.com/idkjs/bs-reactstrap/tar.gz/57f4c1f80b45687bfbe811a91092fbf3c67f4005"
   dependencies:
-    re-classnames "^5.0.1"
     reactstrap "^8.9.0"
 
 "@auth0/auth0-react@^1.6.0":
@@ -3670,6 +3669,11 @@ bs-css@14.0.2:
   version "14.0.2"
   resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-14.0.2.tgz#21786202533b66c0da5bbb3de9d0491b263d7e44"
   integrity sha512-Dr3zr/xgBdxpwZHaYRq2+gf8V1qFDFVU+qLU9P/0zf7/uYhXMwJuvXFA/o1VCV2U5cEu+lywngXHo/BCEBcNpg==
+
+bs-fetch@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.6.2.tgz#37d982e9f79b9bc44c23e87ae78ccbee1f869adf"
+  integrity sha512-VXEjp8kY3vHPckaoy3d96Bx0KYjJAPLNISBwfpwMN26K6DtuZYwI2HKhx7zeHBajz1bRArfx7O8OOLcdtujMvg==
 
 bs-platform@^9.0.2:
   version "9.0.2"

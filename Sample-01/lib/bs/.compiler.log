@@ -1,2 +1,31 @@
-#Start(1628079373435)
-#Done(1628079373646)
+#Start(1628098839304)
+
+  We've found a bug for you!
+  /Users/mando/Github/auth0-react-samples/Sample-01/src/App.re:31:6-10
+  
+  29 ┆       | None => false
+  30 ┆       } =>
+  31 ┆   <Board id />
+  32 ┆ | ["profile"] => <Profile />
+  33 ┆ | _ => <NotFound />
+  
+  The module or file Board can't be found.
+  - If it's a third-party dependency:
+    - Did you list it in bsconfig.json?
+    - Did you run `bsb` instead of `bsb -make-world`
+      (latter builds third-parties)?
+  - Did you include the file's directory in bsconfig.json?
+  
+
+  We've found a bug for you!
+  /Users/mando/Github/auth0-react-samples/Sample-01/src/views/ExternalApi.re:48:12
+  
+  46 ┆ Js.Promise.(
+  47 ┆   Fetch.fetchWithInit(
+  48 ┆     {j|${apiOrigin}/api/external|j},
+  49 ┆     Fetch.RequestInit.make(
+  50 ┆       ~method_=Get,
+  
+  `' is not a valid syntax of interpolated identifer
+  
+#Done(1628098839451)

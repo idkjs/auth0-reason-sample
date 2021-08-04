@@ -18,6 +18,7 @@
   "namespace": true,
 
   "bs-dependencies": [
+    "bs-fetch",
     "bs-css",
     "bs-css-emotion",
     "decco",
