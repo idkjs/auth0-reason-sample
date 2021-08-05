@@ -1,0 +1,130 @@
+rescript = 1
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/bs-fetch/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/bs-css/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/bs-css-emotion/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/bs-webapi/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/decco/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/restorative/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/reason-react/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/reason-promise/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/re-classnames/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/@ahrefs/bs-reactstrap/lib/ocaml/install.stamp
+g_finger := /Users/mando/Github/auth0-react-samples/node_modules/@glennsl/bs-json/lib/ocaml/install.stamp
+rule astj
+  command = /Users/mando/Github/auth0-react-samples/node_modules/bs-platform/darwin/bsc.exe  -bs-v 9.0.2,1628164193.25,1628160530.6 -ppx /Users/mando/Github/auth0-react-samples/node_modules/bs-let/ppx -ppx /Users/mando/Github/auth0-react-samples/node_modules/decco/ppx -bs-jsx 3 -bs-super-errors -bs-no-version-header -absname -bs-ast -o $out $i
+o src/App.ast : astj ../../src/App.re
+rule deps
+  command = /Users/mando/Github/auth0-react-samples/node_modules/bs-platform/darwin/bsb_helper.exe -hash 9d84103a29f6ec8aca7963106892214f -bs-ns Auth0ReasonSample $in
+  restat = 1
+o src/App.d : deps src/App.ast
+rule mij
+  command = /Users/mando/Github/auth0-react-samples/node_modules/bs-platform/darwin/bsc.exe -bs-ns Auth0ReasonSample -I . -I src/config -I src/utils -I src/components -I src/__tests__ -I src/ffi -I src/api -I src/auth0 -I src/views/__tests__ -I src/views -I src/assets -I src -I /Users/mando/Github/auth0-react-samples/node_modules/bs-fetch/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/bs-css/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/bs-css-emotion/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/bs-webapi/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/decco/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/restorative/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/reason-react/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/reason-promise/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/re-classnames/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/@ahrefs/bs-reactstrap/lib/ocaml -I /Users/mando/Github/auth0-react-samples/node_modules/@glennsl/bs-json/lib/ocaml -bs-super-errors -bs-no-version-header  -bs-package-name auth0-reason-sample -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/App-Auth0ReasonSample.cmj src/App-Auth0ReasonSample.cmi ../../src/App.bs.js : mij src/App.ast
+o src/Env.ast : astj ../../src/Env.re
+o src/Env.d : deps src/Env.ast
+o src/Env-Auth0ReasonSample.cmj src/Env-Auth0ReasonSample.cmi ../../src/Env.bs.js : mij src/Env.ast
+o src/Main.ast : astj ../../src/Main.re
+o src/Main.d : deps src/Main.ast
+o src/Main-Auth0ReasonSample.cmj src/Main-Auth0ReasonSample.cmi ../../src/Main.bs.js : mij src/Main.ast
+o src/Index.ast : astj ../../src/Index.re
+o src/Index.d : deps src/Index.ast
+o src/Index-Auth0ReasonSample.cmj src/Index-Auth0ReasonSample.cmi ../../src/Index.bs.js : mij src/Index.ast
+o src/views/Home.ast : astj ../../src/views/Home.re
+o src/views/Home.d : deps src/views/Home.ast
+o src/views/Home-Auth0ReasonSample.cmj src/views/Home-Auth0ReasonSample.cmi ../../src/views/Home.bs.js : mij src/views/Home.ast
+o src/views/Profile.ast : astj ../../src/views/Profile.re
+o src/views/Profile.d : deps src/views/Profile.ast
+o src/views/Profile-Auth0ReasonSample.cmj src/views/Profile-Auth0ReasonSample.cmi ../../src/views/Profile.bs.js : mij src/views/Profile.ast
+o src/views/ExternalApi.ast : astj ../../src/views/ExternalApi.re
+o src/views/ExternalApi.d : deps src/views/ExternalApi.ast
+o src/views/ExternalApi-Auth0ReasonSample.cmj src/views/ExternalApi-Auth0ReasonSample.cmi ../../src/views/ExternalApi.bs.js : mij src/views/ExternalApi.ast
+o src/auth0/Auth0.ast : astj ../../src/auth0/Auth0.re
+o src/auth0/Auth0.d : deps src/auth0/Auth0.ast
+o src/auth0/Auth0-Auth0ReasonSample.cmj src/auth0/Auth0-Auth0ReasonSample.cmi ../../src/auth0/Auth0.bs.js : mij src/auth0/Auth0.ast
+o src/api/API.ast : astj ../../src/api/API.re
+o src/api/API.d : deps src/api/API.ast
+o src/api/API-Auth0ReasonSample.cmj src/api/API-Auth0ReasonSample.cmi ../../src/api/API.bs.js : mij src/api/API.ast
+o src/api/UserStore.ast : astj ../../src/api/UserStore.re
+o src/api/UserStore.d : deps src/api/UserStore.ast
+o src/api/UserStore-Auth0ReasonSample.cmj src/api/UserStore-Auth0ReasonSample.cmi ../../src/api/UserStore.bs.js : mij src/api/UserStore.ast
+o src/ffi/History.ast : astj ../../src/ffi/History.re
+o src/ffi/History.d : deps src/ffi/History.ast
+o src/ffi/History-Auth0ReasonSample.cmj src/ffi/History-Auth0ReasonSample.cmi ../../src/ffi/History.bs.js : mij src/ffi/History.ast
+o src/ffi/SolidIcons.ast : astj ../../src/ffi/SolidIcons.re
+o src/ffi/SolidIcons.d : deps src/ffi/SolidIcons.ast
+o src/ffi/SolidIcons-Auth0ReasonSample.cmj src/ffi/SolidIcons-Auth0ReasonSample.cmi ../../src/ffi/SolidIcons.bs.js : mij src/ffi/SolidIcons.ast
+o src/ffi/ReactRouter.ast : astj ../../src/ffi/ReactRouter.re
+o src/ffi/ReactRouter.d : deps src/ffi/ReactRouter.ast
+o src/ffi/ReactRouter-Auth0ReasonSample.cmj src/ffi/ReactRouter-Auth0ReasonSample.cmi ../../src/ffi/ReactRouter.bs.js : mij src/ffi/ReactRouter.ast
+o src/ffi/FontAwesomeIcon.ast : astj ../../src/ffi/FontAwesomeIcon.re
+o src/ffi/FontAwesomeIcon.d : deps src/ffi/FontAwesomeIcon.ast
+o src/ffi/FontAwesomeIcon-Auth0ReasonSample.cmj src/ffi/FontAwesomeIcon-Auth0ReasonSample.cmi ../../src/ffi/FontAwesomeIcon.bs.js : mij src/ffi/FontAwesomeIcon.ast
+o src/ffi/ReactAtmosphere.ast : astj ../../src/ffi/ReactAtmosphere.re
+o src/ffi/ReactAtmosphere.d : deps src/ffi/ReactAtmosphere.ast
+o src/ffi/ReactAtmosphere-Auth0ReasonSample.cmj src/ffi/ReactAtmosphere-Auth0ReasonSample.cmi ../../src/ffi/ReactAtmosphere.bs.js : mij src/ffi/ReactAtmosphere.ast
+o src/components/Hero.ast : astj ../../src/components/Hero.re
+o src/components/Hero.d : deps src/components/Hero.ast
+o src/components/Hero-Auth0ReasonSample.cmj src/components/Hero-Auth0ReasonSample.cmi ../../src/components/Hero.bs.js : mij src/components/Hero.ast
+o src/components/Footer.ast : astj ../../src/components/Footer.re
+o src/components/Footer.d : deps src/components/Footer.ast
+o src/components/Footer-Auth0ReasonSample.cmj src/components/Footer-Auth0ReasonSample.cmi ../../src/components/Footer.bs.js : mij src/components/Footer.ast
+o src/components/NavBar.ast : astj ../../src/components/NavBar.re
+o src/components/NavBar.d : deps src/components/NavBar.ast
+o src/components/NavBar-Auth0ReasonSample.cmj src/components/NavBar-Auth0ReasonSample.cmi ../../src/components/NavBar.bs.js : mij src/components/NavBar.ast
+o src/components/Content.ast : astj ../../src/components/Content.re
+o src/components/Content.d : deps src/components/Content.ast
+o src/components/Content-Auth0ReasonSample.cmj src/components/Content-Auth0ReasonSample.cmi ../../src/components/Content.bs.js : mij src/components/Content.ast
+o src/components/Loading.ast : astj ../../src/components/Loading.re
+o src/components/Loading.d : deps src/components/Loading.ast
+o src/components/Loading-Auth0ReasonSample.cmj src/components/Loading-Auth0ReasonSample.cmi ../../src/components/Loading.bs.js : mij src/components/Loading.ast
+o src/components/NotFound.ast : astj ../../src/components/NotFound.re
+o src/components/NotFound.d : deps src/components/NotFound.ast
+o src/components/NotFound-Auth0ReasonSample.cmj src/components/NotFound-Auth0ReasonSample.cmi ../../src/components/NotFound.bs.js : mij src/components/NotFound.ast
+o src/components/Highlight.ast : astj ../../src/components/Highlight.re
+o src/components/Highlight.d : deps src/components/Highlight.ast
+o src/components/Highlight-Auth0ReasonSample.cmj src/components/Highlight-Auth0ReasonSample.cmi ../../src/components/Highlight.bs.js : mij src/components/Highlight.ast
+o src/utils/Err.ast : astj ../../src/utils/Err.re
+o src/utils/Err.d : deps src/utils/Err.ast
+o src/utils/Err-Auth0ReasonSample.cmj src/utils/Err-Auth0ReasonSample.cmi ../../src/utils/Err.bs.js : mij src/utils/Err.ast
+o src/utils/Pom.ast : astj ../../src/utils/Pom.re
+o src/utils/Pom.d : deps src/utils/Pom.ast
+o src/utils/Pom-Auth0ReasonSample.cmj src/utils/Pom-Auth0ReasonSample.cmi ../../src/utils/Pom.bs.js : mij src/utils/Pom.ast
+o src/utils/Prom.ast : astj ../../src/utils/Prom.re
+o src/utils/Prom.d : deps src/utils/Prom.ast
+o src/utils/Prom-Auth0ReasonSample.cmj src/utils/Prom-Auth0ReasonSample.cmi ../../src/utils/Prom.bs.js : mij src/utils/Prom.ast
+o src/utils/Async.ast : astj ../../src/utils/Async.re
+o src/utils/Async.d : deps src/utils/Async.ast
+o src/utils/Async-Auth0ReasonSample.cmj src/utils/Async-Auth0ReasonSample.cmi ../../src/utils/Async.bs.js : mij src/utils/Async.ast
+o src/utils/Hooks.ast : astj ../../src/utils/Hooks.re
+o src/utils/Hooks.d : deps src/utils/Hooks.ast
+o src/utils/Hooks-Auth0ReasonSample.cmj src/utils/Hooks-Auth0ReasonSample.cmi ../../src/utils/Hooks.bs.js : mij src/utils/Hooks.ast
+o src/utils/PomEx.ast : astj ../../src/utils/PomEx.re
+o src/utils/PomEx.d : deps src/utils/PomEx.ast
+o src/utils/PomEx-Auth0ReasonSample.cmj src/utils/PomEx-Auth0ReasonSample.cmi ../../src/utils/PomEx.bs.js : mij src/utils/PomEx.ast
+o src/utils/Token.ast : astj ../../src/utils/Token.re
+o src/utils/Token.d : deps src/utils/Token.ast
+o src/utils/Token-Auth0ReasonSample.cmj src/utils/Token-Auth0ReasonSample.cmi ../../src/utils/Token.bs.js : mij src/utils/Token.ast
+o src/utils/Utils.ast : astj ../../src/utils/Utils.re
+o src/utils/Utils.d : deps src/utils/Utils.ast
+o src/utils/Utils-Auth0ReasonSample.cmj src/utils/Utils-Auth0ReasonSample.cmi ../../src/utils/Utils.bs.js : mij src/utils/Utils.ast
+o src/utils/PromEx.ast : astj ../../src/utils/PromEx.re
+o src/utils/PromEx.d : deps src/utils/PromEx.ast
+o src/utils/PromEx-Auth0ReasonSample.cmj src/utils/PromEx-Auth0ReasonSample.cmi ../../src/utils/PromEx.bs.js : mij src/utils/PromEx.ast
+o src/utils/Constants.ast : astj ../../src/utils/Constants.re
+o src/utils/Constants.d : deps src/utils/Constants.ast
+o src/utils/Constants-Auth0ReasonSample.cmj src/utils/Constants-Auth0ReasonSample.cmi ../../src/utils/Constants.bs.js : mij src/utils/Constants.ast
+o src/utils/RePromise.ast : astj ../../src/utils/RePromise.re
+o src/utils/RePromise.d : deps src/utils/RePromise.ast
+o src/utils/RePromise-Auth0ReasonSample.cmj src/utils/RePromise-Auth0ReasonSample.cmi ../../src/utils/RePromise.bs.js : mij src/utils/RePromise.ast
+o src/utils/ContentData.ast : astj ../../src/utils/ContentData.re
+o src/utils/ContentData.d : deps src/utils/ContentData.ast
+o src/utils/ContentData-Auth0ReasonSample.cmj src/utils/ContentData-Auth0ReasonSample.cmi ../../src/utils/ContentData.bs.js : mij src/utils/ContentData.ast
+o src/config/Config.ast : astj ../../src/config/Config.re
+o src/config/Config.d : deps src/config/Config.ast
+o src/config/Config-Auth0ReasonSample.cmj src/config/Config-Auth0ReasonSample.cmi ../../src/config/Config.bs.js : mij src/config/Config.ast
+rule build_package
+  command = /Users/mando/Github/auth0-react-samples/node_modules/bs-platform/darwin/bsc.exe -w -49 -color always -no-alias-deps  $i
+  restat = 1
+o Auth0ReasonSample.cmi : build_package Auth0ReasonSample.mlmap

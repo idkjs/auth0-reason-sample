@@ -1,0 +1,26 @@
+#Start(1628187292402)
+
+  Warning number 11
+  /Users/mando/Github/auth0-react-samples/src/App.re:40:3-17
+  
+  38 ┆ switch (isLoading, error, user) {
+  39 ┆ | (_isLoading, _, _) => <Loading />
+  40 ┆ | (_, _, _user) =>
+  41 ┆   <div id="app" className="d-flex flex-column h-100">
+  42 ┆     <NavBar />
+  
+  this match case is unused.
+  
+
+  Warning number 11
+  /Users/mando/Github/auth0-react-samples/src/App.re:61:3-17
+  
+  59 ┆     <Footer />
+  60 ┆   </div>
+  61 ┆ | (_, error, _) =>
+  62 ┆   let error = error->Obj.magic;
+  63 ┆   raiseErrorAndReturn(error##message)->ignore;
+  
+  this match case is unused.
+  
+#Done(1628187292571)

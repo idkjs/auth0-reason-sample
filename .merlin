@@ -1,0 +1,48 @@
+####{BSB GENERATED: NO EDIT
+B lib/bs
+FLG -open Auth0ReasonSample
+FLG -ppx /Users/mando/Github/auth0-react-samples/node_modules/bs-let/ppx
+FLG -ppx /Users/mando/Github/auth0-react-samples/node_modules/decco/ppx
+FLG -ppx '/Users/mando/Github/auth0-react-samples/node_modules/bs-platform/darwin/bsc.exe -as-ppx -bs-jsx 3'
+S /Users/mando/Github/auth0-react-samples/node_modules/bs-platform/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/bs-platform/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /Users/mando/Github/auth0-react-samples/node_modules/bs-fetch/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/bs-fetch/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/bs-css/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/bs-css/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/bs-css-emotion/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/bs-css-emotion/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/bs-webapi/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/bs-webapi/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/decco/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/decco/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/restorative/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/restorative/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/reason-react/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/reason-react/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/reason-promise/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/reason-promise/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/re-classnames/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/re-classnames/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/@ahrefs/bs-reactstrap/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/@ahrefs/bs-reactstrap/lib/ocaml
+S /Users/mando/Github/auth0-react-samples/node_modules/@glennsl/bs-json/lib/ocaml
+B /Users/mando/Github/auth0-react-samples/node_modules/@glennsl/bs-json/lib/ocaml
+S src
+B lib/bs/src
+S src/views
+B lib/bs/src/views
+S src/auth0
+B lib/bs/src/auth0
+S src/api
+B lib/bs/src/api
+S src/ffi
+B lib/bs/src/ffi
+S src/components
+B lib/bs/src/components
+S src/utils
+B lib/bs/src/utils
+S src/config
+B lib/bs/src/config
+####BSB GENERATED: NO EDIT}
