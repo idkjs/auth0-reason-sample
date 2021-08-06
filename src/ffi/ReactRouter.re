@@ -6,7 +6,7 @@ module Router = {
 
 module Route = {
   [@bs.module "react-router-dom"] [@react.component]
-  external make: (~path: string=?, ~children: 'a) => React.element = "Route";
+  external make: (~path: string=?,~exact:bool=?, ~component: 'a) => React.element = "Route";
 };
 
 module Switch = {

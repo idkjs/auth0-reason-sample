@@ -1,6 +1,6 @@
+'use strict';
 
-
-import * as Auth_configJson from "./auth_config.json";
+var Auth_configJson = require("./auth_config.json");
 
 var configJson = Auth_configJson;
 
@@ -14,9 +14,6 @@ function getConfig(param) {
         };
 }
 
-export {
-  configJson ,
-  getConfig ,
-  
-}
+exports.configJson = configJson;
+exports.getConfig = getConfig;
 /* configJson Not a pure module */

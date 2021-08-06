@@ -1,16 +1,16 @@
+'use strict';
 
-
-import * as Fetch from "bs-fetch/src/Fetch.bs.js";
-import * as Js_dict from "bs-platform/lib/es6/js_dict.js";
-import * as Js_json from "bs-platform/lib/es6/js_json.js";
-import * as $$Promise from "reason-promise/src/js/promise.bs.js";
-import * as Belt_Option from "bs-platform/lib/es6/belt_Option.js";
-import * as Belt_Result from "bs-platform/lib/es6/belt_Result.js";
-import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
-import * as Json_decode from "@glennsl/bs-json/src/Json_decode.bs.js";
-import * as Constants$Auth0ReasonSample from "../utils/Constants.bs.js";
-import * as RePromise$Auth0ReasonSample from "../utils/RePromise.bs.js";
-import * as UserStore$Auth0ReasonSample from "./UserStore.bs.js";
+var Fetch = require("bs-fetch/src/Fetch.bs.js");
+var Js_dict = require("bs-platform/lib/js/js_dict.js");
+var Js_json = require("bs-platform/lib/js/js_json.js");
+var $$Promise = require("reason-promise/src/js/promise.bs.js");
+var Belt_Option = require("bs-platform/lib/js/belt_Option.js");
+var Belt_Result = require("bs-platform/lib/js/belt_Result.js");
+var Caml_option = require("bs-platform/lib/js/caml_option.js");
+var Json_decode = require("@glennsl/bs-json/src/Json_decode.bs.js");
+var Constants$Auth0ReasonSample = require("../utils/Constants.bs.js");
+var RePromise$Auth0ReasonSample = require("../utils/RePromise.bs.js");
+var UserStore$Auth0ReasonSample = require("./UserStore.bs.js");
 
 var redirectUrl = Constants$Auth0ReasonSample.clientUrl + "/oauth/callback";
 
@@ -85,11 +85,8 @@ function fetchUser(param) {
   }
 }
 
-export {
-  redirectUrl ,
-  login ,
-  logout ,
-  fetchUser ,
-  
-}
+exports.redirectUrl = redirectUrl;
+exports.login = login;
+exports.logout = logout;
+exports.fetchUser = fetchUser;
 /* Promise Not a pure module */

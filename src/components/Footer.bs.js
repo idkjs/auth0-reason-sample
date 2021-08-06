@@ -1,6 +1,6 @@
+'use strict';
 
-
-import * as React from "react";
+var React = require("react");
 
 function Footer(Props) {
   return React.createElement("footer", {
@@ -14,8 +14,5 @@ function Footer(Props) {
 
 var make = Footer;
 
-export {
-  make ,
-  
-}
+exports.make = make;
 /* react Not a pure module */

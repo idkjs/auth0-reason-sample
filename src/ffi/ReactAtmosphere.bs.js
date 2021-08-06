@@ -1,9 +1,9 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as Js_option from "bs-platform/lib/es6/js_option.js";
-import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
-import * as ReactAtmosphere from "react-atmosphere";
+var Curry = require("bs-platform/lib/js/curry.js");
+var Js_option = require("bs-platform/lib/js/js_option.js");
+var Caml_option = require("bs-platform/lib/js/caml_option.js");
+var ReactAtmosphere = require("react-atmosphere");
 
 function layerStateToJs(param) {
   return param + 0 | 0;
@@ -151,17 +151,14 @@ var API = {
   updateLayer: updateLayer
 };
 
-export {
-  layerStateToJs ,
-  layerStateFromJs ,
-  layerRenderToLayerRenderJs ,
-  Layer ,
-  LayerContainer ,
-  Popper ,
-  PopperLayer ,
-  Tooltip ,
-  Dialog ,
-  API ,
-  
-}
+exports.layerStateToJs = layerStateToJs;
+exports.layerStateFromJs = layerStateFromJs;
+exports.layerRenderToLayerRenderJs = layerRenderToLayerRenderJs;
+exports.Layer = Layer;
+exports.LayerContainer = LayerContainer;
+exports.Popper = Popper;
+exports.PopperLayer = PopperLayer;
+exports.Tooltip = Tooltip;
+exports.Dialog = Dialog;
+exports.API = API;
 /* react-atmosphere Not a pure module */

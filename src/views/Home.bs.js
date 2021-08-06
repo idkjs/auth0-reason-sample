@@ -1,8 +1,8 @@
+'use strict';
 
-
-import * as React from "react";
-import * as Hero$Auth0ReasonSample from "../components/Hero.bs.js";
-import * as Content$Auth0ReasonSample from "../components/Content.bs.js";
+var React = require("react");
+var Hero$Auth0ReasonSample = require("../components/Hero.bs.js");
+var Content$Auth0ReasonSample = require("../components/Content.bs.js");
 
 function Home(Props) {
   return React.createElement(React.Fragment, undefined, React.createElement(Hero$Auth0ReasonSample.make, {}), React.createElement("hr", undefined), React.createElement(Content$Auth0ReasonSample.make, {}));
@@ -10,8 +10,5 @@ function Home(Props) {
 
 var make = Home;
 
-export {
-  make ,
-  
-}
+exports.make = make;
 /* react Not a pure module */

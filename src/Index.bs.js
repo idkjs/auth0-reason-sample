@@ -1,11 +1,15 @@
+'use strict';
 
+var React = require("react");
+var ReactDOMRe = require("reason-react/src/legacy/ReactDOMRe.bs.js");
+var Auth0React = require("@auth0/auth0-react");
+var App$Auth0ReasonSample = require("./App.bs.js");
 
-import * as React from "react";
-import * as ReactDOMRe from "reason-react/src/legacy/ReactDOMRe.bs.js";
-import * as Auth0React from "@auth0/auth0-react";
-import * as App$Auth0ReasonSample from "./App.bs.js";
+((require('./index.css')));
 
 var $$window = window;
+
+console.log(process.env.AUTH0_DOMAIN, process.env.AUTH0_CLIENT_ID, process.env.AUTH0_AUDIENCE, $$window.location.origin);
 
 ReactDOMRe.renderToElementWithId(React.createElement(Auth0React.Auth0Provider, {
           domain: process.env.AUTH0_DOMAIN,
@@ -15,8 +19,13 @@ ReactDOMRe.renderToElementWithId(React.createElement(Auth0React.Auth0Provider, {
           children: React.createElement(App$Auth0ReasonSample.make, {})
         }), "root");
 
-export {
-  $$window ,
-  
+if (
+    "serviceWorker" in navigator &&
+    !window.location.host.startsWith("localhost")
+) {
+    navigator.serviceWorker.register("/sw.js");
 }
-/* window Not a pure module */
+;
+
+exports.$$window = $$window;
+/*  Not a pure module */

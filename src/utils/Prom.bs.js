@@ -1,6 +1,6 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
+var Curry = require("bs-platform/lib/js/curry.js");
 
 function make(param) {
   var resolver = {
@@ -160,26 +160,23 @@ var andThen = flatMap;
 
 var let_ = flatMap;
 
-export {
-  make ,
-  map ,
-  flatMap ,
-  andThen ,
-  $$catch ,
-  logOnRejection ,
-  wrap ,
-  wait ,
-  all ,
-  Result ,
-  wrapOk ,
-  wrapError ,
-  mapOk ,
-  flatMapOk ,
-  mapError ,
-  flatMapError ,
-  recover ,
-  Infix ,
-  let_ ,
-  
-}
+exports.make = make;
+exports.map = map;
+exports.flatMap = flatMap;
+exports.andThen = andThen;
+exports.$$catch = $$catch;
+exports.logOnRejection = logOnRejection;
+exports.wrap = wrap;
+exports.wait = wait;
+exports.all = all;
+exports.Result = Result;
+exports.wrapOk = wrapOk;
+exports.wrapError = wrapError;
+exports.mapOk = mapOk;
+exports.flatMapOk = flatMapOk;
+exports.mapError = mapError;
+exports.flatMapError = flatMapError;
+exports.recover = recover;
+exports.Infix = Infix;
+exports.let_ = let_;
 /* No side effect */

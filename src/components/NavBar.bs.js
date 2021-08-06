@@ -1,12 +1,12 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as React from "react";
-import * as Reactstrap from "reactstrap";
-import * as ReactRouterDom from "react-router-dom";
-import * as Auth0React from "@auth0/auth0-react";
-import * as ReactFontawesome from "@fortawesome/react-fontawesome";
-import * as FreeSolidSvgIcons from "@fortawesome/free-solid-svg-icons";
+var Curry = require("bs-platform/lib/js/curry.js");
+var React = require("react");
+var Reactstrap = require("reactstrap");
+var ReactRouterDom = require("react-router-dom");
+var Auth0React = require("@auth0/auth0-react");
+var ReactFontawesome = require("@fortawesome/react-fontawesome");
+var FreeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 
 function NavBar(Props) {
   var match = React.useState(function () {
@@ -171,9 +171,6 @@ var RouterNavLink;
 
 var make = NavBar;
 
-export {
-  RouterNavLink ,
-  make ,
-  
-}
+exports.RouterNavLink = RouterNavLink;
+exports.make = make;
 /* react Not a pure module */

@@ -1,15 +1,15 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as Fetch from "bs-fetch/src/Fetch.bs.js";
-import * as React from "react";
-import * as $$Promise from "reason-promise/src/js/promise.bs.js";
-import * as Caml_obj from "bs-platform/lib/es6/caml_obj.js";
-import * as Reactstrap from "reactstrap";
-import * as Auth0React from "@auth0/auth0-react";
-import * as Utils$Auth0ReasonSample from "../utils/Utils.bs.js";
-import * as Config$Auth0ReasonSample from "../config/Config.bs.js";
-import * as Highlight$Auth0ReasonSample from "../components/Highlight.bs.js";
+var Curry = require("bs-platform/lib/js/curry.js");
+var Fetch = require("bs-fetch/src/Fetch.bs.js");
+var React = require("react");
+var $$Promise = require("reason-promise/src/js/promise.bs.js");
+var Caml_obj = require("bs-platform/lib/js/caml_obj.js");
+var Reactstrap = require("reactstrap");
+var Auth0React = require("@auth0/auth0-react");
+var Utils$Auth0ReasonSample = require("../utils/Utils.bs.js");
+var Config$Auth0ReasonSample = require("../config/Config.bs.js");
+var Highlight$Auth0ReasonSample = require("../components/Highlight.bs.js");
 
 var initialState = {
   showResult: false,
@@ -180,9 +180,6 @@ function ExternalApi(Props) {
 
 var make = ExternalApi;
 
-export {
-  initialState ,
-  make ,
-  
-}
+exports.initialState = initialState;
+exports.make = make;
 /* react Not a pure module */

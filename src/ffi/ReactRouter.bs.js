@@ -1,4 +1,4 @@
-
+'use strict';
 
 
 var Router = {};
@@ -11,12 +11,9 @@ var Link = {};
 
 var NavLink = {};
 
-export {
-  Router ,
-  Route ,
-  Switch ,
-  Link ,
-  NavLink ,
-  
-}
+exports.Router = Router;
+exports.Route = Route;
+exports.Switch = Switch;
+exports.Link = Link;
+exports.NavLink = NavLink;
 /* No side effect */

@@ -1,6 +1,6 @@
+'use strict';
 
-
-import * as React from "react";
+var React = require("react");
 
 function Hero(Props) {
   return React.createElement("div", {
@@ -21,8 +21,5 @@ function Hero(Props) {
 
 var make = Hero;
 
-export {
-  make ,
-  
-}
+exports.make = make;
 /* react Not a pure module */

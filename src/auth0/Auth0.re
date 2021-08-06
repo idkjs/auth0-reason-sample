@@ -20,7 +20,7 @@ type t = {
   getAccessTokenWithPopup: unit => Js.Promise.t(unit),
   isAuthenticated: bool,
   isLoading: bool,
-  error: Js.Exn.t,
+  error: option(Js.Exn.t),
   logout: (~returnTo: string=?) => unit,
   user,
   getAccessTokenSilently: option(getTokenSilentlyOptions) => Js.Promise.t(string),

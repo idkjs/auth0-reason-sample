@@ -1,11 +1,11 @@
+'use strict';
 
-
-import * as React from "react";
-import * as Belt_Array from "bs-platform/lib/es6/belt_Array.js";
-import * as Reactstrap from "reactstrap";
-import * as ContentData$Auth0ReasonSample from "../utils/ContentData.bs.js";
-import * as ReactFontawesome from "@fortawesome/react-fontawesome";
-import * as FreeSolidSvgIcons from "@fortawesome/free-solid-svg-icons";
+var React = require("react");
+var Belt_Array = require("bs-platform/lib/js/belt_Array.js");
+var Reactstrap = require("reactstrap");
+var ContentData$Auth0ReasonSample = require("../utils/ContentData.bs.js");
+var ReactFontawesome = require("@fortawesome/react-fontawesome");
+var FreeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 
 function Content(Props) {
   return React.createElement("div", {
@@ -38,10 +38,7 @@ var Row;
 
 var make = Content;
 
-export {
-  Col ,
-  Row ,
-  make ,
-  
-}
+exports.Col = Col;
+exports.Row = Row;
+exports.make = make;
 /* react Not a pure module */

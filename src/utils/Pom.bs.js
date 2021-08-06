@@ -1,9 +1,9 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as Bluebird from "bluebird";
-import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
-import * as Caml_exceptions from "bs-platform/lib/es6/caml_exceptions.js";
+var Curry = require("bs-platform/lib/js/curry.js");
+var Bluebird = require("bluebird");
+var Caml_option = require("bs-platform/lib/js/caml_option.js");
+var Caml_exceptions = require("bs-platform/lib/js/caml_exceptions.js");
 
 global.Promise = require('bluebird')
 ;
@@ -259,34 +259,31 @@ var $less$bang$great = tapCatch;
 
 var let_$3 = flatMap;
 
-export {
-  Bluebird$1 as Bluebird,
-  make ,
-  makeWithCallback ,
-  fromCallback ,
-  resolved ,
-  map ,
-  tap ,
-  tapCatch ,
-  flatMap ,
-  PromiseRejected ,
-  recover ,
-  $$catch ,
-  onError ,
-  wait ,
-  all ,
-  WithError ,
-  fromJsPromise ,
-  toJsPromise ,
-  optionify ,
-  Infix ,
-  $less$$great ,
-  $great$great$eq ,
-  $less$bang$great ,
-  let_$3 as let_,
-  Wrap ,
-  AsJS ,
-  Effect ,
-  
-}
+exports.Bluebird = Bluebird$1;
+exports.make = make;
+exports.makeWithCallback = makeWithCallback;
+exports.fromCallback = fromCallback;
+exports.resolved = resolved;
+exports.map = map;
+exports.tap = tap;
+exports.tapCatch = tapCatch;
+exports.flatMap = flatMap;
+exports.PromiseRejected = PromiseRejected;
+exports.recover = recover;
+exports.$$catch = $$catch;
+exports.onError = onError;
+exports.wait = wait;
+exports.all = all;
+exports.WithError = WithError;
+exports.fromJsPromise = fromJsPromise;
+exports.toJsPromise = toJsPromise;
+exports.optionify = optionify;
+exports.Infix = Infix;
+exports.$less$$great = $less$$great;
+exports.$great$great$eq = $great$great$eq;
+exports.$less$bang$great = $less$bang$great;
+exports.let_ = let_$3;
+exports.Wrap = Wrap;
+exports.AsJS = AsJS;
+exports.Effect = Effect;
 /*  Not a pure module */

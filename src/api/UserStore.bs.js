@@ -1,9 +1,9 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as Belt_Option from "bs-platform/lib/es6/belt_Option.js";
-import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
-import * as Restorative from "restorative/src/Restorative.bs.js";
+var Curry = require("bs-platform/lib/js/curry.js");
+var Belt_Option = require("bs-platform/lib/js/belt_Option.js");
+var Caml_option = require("bs-platform/lib/js/caml_option.js");
+var Restorative = require("restorative/src/Restorative.bs.js");
 
 var sessionId = localStorage.getItem("sessionId");
 
@@ -115,18 +115,15 @@ function fetchFail(param) {
   return Curry._1(api.dispatch, /* FetchFail */1);
 }
 
-export {
-  sessionId$1 as sessionId,
-  api ,
-  getSessionId ,
-  useHasFetched ,
-  useUser ,
-  getUser ,
-  login ,
-  logout ,
-  updateUser ,
-  setAnonymous ,
-  fetchFail ,
-  
-}
+exports.sessionId = sessionId$1;
+exports.api = api;
+exports.getSessionId = getSessionId;
+exports.useHasFetched = useHasFetched;
+exports.useUser = useUser;
+exports.getUser = getUser;
+exports.login = login;
+exports.logout = logout;
+exports.updateUser = updateUser;
+exports.setAnonymous = setAnonymous;
+exports.fetchFail = fetchFail;
 /* sessionId Not a pure module */

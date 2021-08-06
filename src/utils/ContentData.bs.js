@@ -1,4 +1,4 @@
-
+'use strict';
 
 
 var contentData = [
@@ -24,8 +24,5 @@ var contentData = [
   }
 ];
 
-export {
-  contentData ,
-  
-}
+exports.contentData = contentData;
 /* No side effect */

@@ -1,4 +1,4 @@
-
+'use strict';
 
 
 function toString(err) {
@@ -9,8 +9,5 @@ function toString(err) {
   }
 }
 
-export {
-  toString ,
-  
-}
+exports.toString = toString;
 /* No side effect */

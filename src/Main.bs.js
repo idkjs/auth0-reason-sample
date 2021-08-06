@@ -1,15 +1,15 @@
+'use strict';
 
-
-import * as React from "react";
-import * as $$Promise from "reason-promise/src/js/promise.bs.js";
-import * as Caml_array from "bs-platform/lib/es6/caml_array.js";
-import * as Belt_Option from "bs-platform/lib/es6/belt_Option.js";
-import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
-import * as ReactAtmosphere from "react-atmosphere";
-import * as ReasonReactRouter from "reason-react/src/ReasonReactRouter.bs.js";
-import * as API$Auth0ReasonSample from "./api/API.bs.js";
-import * as Home$Auth0ReasonSample from "./views/Home.bs.js";
-import * as RePromise$Auth0ReasonSample from "./utils/RePromise.bs.js";
+var React = require("react");
+var $$Promise = require("reason-promise/src/js/promise.bs.js");
+var Caml_array = require("bs-platform/lib/js/caml_array.js");
+var Belt_Option = require("bs-platform/lib/js/belt_Option.js");
+var Caml_option = require("bs-platform/lib/js/caml_option.js");
+var ReactAtmosphere = require("react-atmosphere");
+var ReasonReactRouter = require("reason-react/src/ReasonReactRouter.bs.js");
+var API$Auth0ReasonSample = require("./api/API.bs.js");
+var Home$Auth0ReasonSample = require("./views/Home.bs.js");
+var RePromise$Auth0ReasonSample = require("./utils/RePromise.bs.js");
 
 function Main(Props) {
   var url = ReasonReactRouter.useUrl(undefined, undefined);
@@ -45,8 +45,5 @@ function Main(Props) {
 
 var make = Main;
 
-export {
-  make ,
-  
-}
+exports.make = make;
 /* react Not a pure module */

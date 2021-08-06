@@ -1,4 +1,4 @@
-
+'use strict';
 
 
 var sessionPageId = "counters.session.id";
@@ -9,11 +9,8 @@ var clientUrl = "http://localhost:3000";
 
 var serverUrl = "http://localhost:3030";
 
-export {
-  sessionPageId ,
-  sessionToken ,
-  clientUrl ,
-  serverUrl ,
-  
-}
+exports.sessionPageId = sessionPageId;
+exports.sessionToken = sessionToken;
+exports.clientUrl = clientUrl;
+exports.serverUrl = serverUrl;
 /* No side effect */

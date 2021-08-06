@@ -1,9 +1,9 @@
+'use strict';
 
-
-import * as React from "react";
-import * as Reactstrap from "reactstrap";
-import * as Auth0React from "@auth0/auth0-react";
-import * as Highlight$Auth0ReasonSample from "../components/Highlight.bs.js";
+var React = require("react");
+var Reactstrap = require("reactstrap");
+var Auth0React = require("@auth0/auth0-react");
+var Highlight$Auth0ReasonSample = require("../components/Highlight.bs.js");
 
 function stringify(str) {
   return JSON.stringify(str, null, 2);
@@ -39,9 +39,6 @@ function Profile(Props) {
 
 var make = Profile;
 
-export {
-  stringify ,
-  make ,
-  
-}
+exports.stringify = stringify;
+exports.make = make;
 /* react Not a pure module */

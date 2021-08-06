@@ -1,11 +1,8 @@
+'use strict';
 
-
-import HighlightJs from "./Highlight.js";
+var HighlightJs = require("./Highlight.js").default;
 
 var make = HighlightJs;
 
-export {
-  make ,
-  
-}
+exports.make = make;
 /* make Not a pure module */

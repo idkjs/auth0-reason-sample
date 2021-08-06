@@ -1,7 +1,7 @@
+'use strict';
 
-
-import * as Belt_Option from "bs-platform/lib/es6/belt_Option.js";
-import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
+var Belt_Option = require("bs-platform/lib/js/belt_Option.js");
+var Caml_option = require("bs-platform/lib/js/caml_option.js");
 
 function LocalStorage(K) {
   var key = K.key;
@@ -67,14 +67,11 @@ function resetStore(param) {
   
 }
 
-export {
-  LocalStorage ,
-  Token ,
-  getToken ,
-  setToken ,
-  deleteToken ,
-  isLoggedIn ,
-  resetStore ,
-  
-}
+exports.LocalStorage = LocalStorage;
+exports.Token = Token;
+exports.getToken = getToken;
+exports.setToken = setToken;
+exports.deleteToken = deleteToken;
+exports.isLoggedIn = isLoggedIn;
+exports.resetStore = resetStore;
 /* No side effect */

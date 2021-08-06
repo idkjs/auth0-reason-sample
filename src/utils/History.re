@@ -55,6 +55,6 @@ type hashHistoryOpt = {
   hashType: string,
   getUserConfirmation,
 };
-
-[@bs.module]
-external createHashHistory: hashHistoryOpt => History.t = "createHashHistory";
+// type history;
+// [@bs.module "./history"]
+// external history: unit => History.t = "default";

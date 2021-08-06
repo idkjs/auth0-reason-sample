@@ -1,6 +1,6 @@
+'use strict';
 
-
-import * as React from "react";
+var React = require("react");
 
 function NotFound(Props) {
   return React.createElement("div", {
@@ -10,8 +10,5 @@ function NotFound(Props) {
 
 var make = NotFound;
 
-export {
-  make ,
-  
-}
+exports.make = make;
 /* react Not a pure module */

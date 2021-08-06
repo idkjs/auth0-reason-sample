@@ -1,6 +1,6 @@
+'use strict';
 
-
-import * as React from "react";
+var React = require("react");
 
 function Loading(Props) {
   return React.createElement("div", {
@@ -13,8 +13,5 @@ function Loading(Props) {
 
 var make = Loading;
 
-export {
-  make ,
-  
-}
+exports.make = make;
 /* react Not a pure module */

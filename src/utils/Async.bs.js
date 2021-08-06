@@ -1,7 +1,7 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as Js_exn from "bs-platform/lib/es6/js_exn.js";
+var Curry = require("bs-platform/lib/js/curry.js");
+var Js_exn = require("bs-platform/lib/js/js_exn.js");
 
 global.Promise = require('bluebird')
 ;
@@ -50,13 +50,10 @@ function attemptMapAsync(promise, attempter) {
               }));
 }
 
-export {
-  let_ ,
-  mapAsync ,
-  async ,
-  catchAsync ,
-  asyncFromResult ,
-  attemptMapAsync ,
-  
-}
+exports.let_ = let_;
+exports.mapAsync = mapAsync;
+exports.async = async;
+exports.catchAsync = catchAsync;
+exports.asyncFromResult = asyncFromResult;
+exports.attemptMapAsync = attemptMapAsync;
 /*  Not a pure module */

@@ -1,9 +1,9 @@
+'use strict';
 
-
-import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as React from "react";
-import * as Belt_Option from "bs-platform/lib/es6/belt_Option.js";
-import * as Caml_option from "bs-platform/lib/es6/caml_option.js";
+var Curry = require("bs-platform/lib/js/curry.js");
+var React = require("react");
+var Belt_Option = require("bs-platform/lib/js/belt_Option.js");
+var Caml_option = require("bs-platform/lib/js/caml_option.js");
 
 function _useStorage(storage, key) {
   var match = React.useState(function () {
@@ -44,10 +44,7 @@ function useSessionStorage(param) {
   return _useStorage(partial_arg$1, param);
 }
 
-export {
-  _useStorage ,
-  useLocalStorage ,
-  useSessionStorage ,
-  
-}
+exports._useStorage = _useStorage;
+exports.useLocalStorage = useLocalStorage;
+exports.useSessionStorage = useSessionStorage;
 /* partial_arg Not a pure module */
